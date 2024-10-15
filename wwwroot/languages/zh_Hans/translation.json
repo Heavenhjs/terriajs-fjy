@@ -724,6 +724,30 @@
     }
   },
   "models": {
+    "catalog": {
+    "name": "未命名项目",
+    "group": "组",
+    "idForMatchingErrorTitle": "缺少属性",
+    "idForMatchingErrorMessage": "模型对象必须具有`id`、`localId`或`name`属性。",
+    "catalogMemberMustHaveName": "新创建的目录成员必须有一个名称。",
+    "catalogMemberMustHaveType": "目录成员必须有一个类型。",
+    "userAddedDataGroup": "用户通过“添加数据”面板添加的数据组。",
+    "chartDataGroup": "图表数据的组。",
+    "dataSourceErrorMessage": "此数据源没有任何可用的详细信息。",
+    "serviceErrorMessage": "此服务没有任何可用的详细信息。",
+    "stubCreationFailure": "无法为目录项{{item}}创建存根",
+    "unsupportedTypeTitle": "未知类型",
+    "unsupportedTypeMessage": "无法创建未知的模型类型{{type}}。",
+    "unsupportedFileTypeTitle": "不支持的文件类型",
+    "unsupportedFileTypeMessage": "{{appName}}不支持此文件格式。支持的文件格式包括：<ul><li>.geojson</li><li>.kml, .kmz</li><li>.csv (在{{link}}中)</li><li>Shapefile (.zip)</li></ul>",
+    "upload": "上传",
+    "mustHaveType": "每个项目必须有一个类型。",
+    "compositesError": "复合材料不能包含复合项目。",
+    "convertErrorTitle": "无法将目录升级到V8",
+    "convertErrorMessage": "此目录文件基于TerriaJS的旧版本 - 驱动此网络地图的软件。在尝试升级目录数据时发生错误{{url}}。",
+    "addAll": "全部添加",
+    "removeAll": "全部移除"
+  },
     "userData": {
       "addingDataErrorTitle": "无法添加数据",
       "addingDataErrorMessage": "无法添加指定的数据，因为它无效或不具有预期的格式。",
@@ -960,5 +984,11 @@
   },
   "includeStory": {
     "message": "分享时包含故事"
+  },
+  "relatedMaps": {
+    "buttonText": "相关地图",
+    "buttonTitle": "查看相关地图",
+    "panelHeading": "相关地图",
+    "panelText": "点击下面的地图将会在一个单独的窗口或标签页中打开。"
   }
 }
