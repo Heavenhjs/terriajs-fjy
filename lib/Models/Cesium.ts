@@ -1196,16 +1196,18 @@ export default class Cesium extends GlobeOrMap {
       };
     } else if (this.terria.configParameters.useCesiumIonTerrain) {
       // Use Cesium ION world Terrain
-      const logo = require("terriajs-cesium/Source/Assets/Images/ion-credit.png");
-      const ionCredit = new Credit(
-        '<a href="https://cesium.com/" target="_blank" rel="noopener noreferrer"><img src="' +
-          logo +
-          '" title="Cesium ion"/></a>',
-        true
-      );
+      // 取消这里的logo
+      // const logo = require("terriajs-cesium/Source/Assets/Images/ion-credit.png");
+      // const ionCredit = new Credit(
+      //   '<a href="https://cesium.com/" target="_blank" rel="noopener noreferrer"><img src="' +
+      //     logo +
+      //     '" title="Cesium ion"/></a>',
+      //   true
+      // );
       return {
         terrainProviderPromise: this.createWorldTerrain(),
-        credit: ionCredit
+        // 相应取消这里的返回
+        // credit: ionCredit
       };
     } else {
       // Default to ellipsoid/3d-smooth
